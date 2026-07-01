@@ -747,14 +747,13 @@ function Footer() {
         </div>
         <div className="flex items-center gap-3 sm:justify-end">
           {[
-            { icon: Twitter, label: "Twitter" },
-            { icon: Linkedin, label: "LinkedIn" },
-            { icon: Instagram, label: "Instagram" },
-            { icon: Facebook, label: "Facebook" },
-          ].map(({ icon: Icon, label }) => (
+            { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/synha" },
+            { icon: Instagram, label: "Instagram", href: "https://www.linkedin.com/company/synha" },
+            { icon: Facebook, label: "Facebook", href: "https://www.linkedin.com/company/synha" },
+          ].map(({ icon: Icon, label, href }) => (
             <a
               key={label}
-              href="#"
+              href={href}
               aria-label={label}
               className="grid h-10 w-10 place-items-center rounded-full border border-[var(--color-dark-foreground)]/25 text-[var(--color-dark-foreground)]/80 transition hover:border-primary hover:bg-primary hover:text-primary-foreground"
             >
@@ -765,7 +764,7 @@ function Footer() {
       </div>
       <div className="border-t border-[var(--color-dark-foreground)]/15">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-[var(--color-dark-foreground)]/60 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} Replyly. All rights reserved.</p>
+          <p>© {year} Synha. All rights reserved.</p>
           <p>Made with care for businesses that love their customers.</p>
         </div>
       </div>
