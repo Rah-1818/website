@@ -78,7 +78,7 @@ function LandingPage() {
     </div>
   );
 }
-import logo from "D:/mohit/msg-mastery-site-main(1)/msg-mastery-site-main/src/image/LOGO_R.png";
+import logo from "../image/LOGO_R.png";
 
 function Logo() {
   return (
